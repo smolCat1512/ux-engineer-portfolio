@@ -3,7 +3,7 @@ import Logo from './logo';
 
 const navItems = [
   { title: 'Case Studies', href: '#case-studies' },
-  { title: 'About + CV', href: '#about-cv' },
+  { title: 'About + CV', href: '#about' },
   { title: 'What and How', href: '#what-how' },
   { title: 'Connect', href: '#connect' },
 ];
