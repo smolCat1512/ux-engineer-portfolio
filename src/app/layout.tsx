@@ -3,6 +3,8 @@ import "../app/globals.css";
 import Header from "@/components/header";
 import CaseStudies from "@/components/casestudies";
 import About from "@/components/about";
+import WhatAndHow from "@/components/what";
+import Connect from "@/components/connect";
 
 export default function RootLayout({
   children,
@@ -22,6 +24,12 @@ export default function RootLayout({
           </section>
           <section id="about" className="h-screen snap-start flex items-center justify-center">
             <About />
+          </section>
+          <section id="what-how" className="h-screen snap-start flex items-center justify-center">
+            <WhatAndHow />
+          </section>
+          <section id="connect" className="h-screen snap-start flex items-center justify-center">
+            <Connect />
           </section>
         <Footer />
         </main>
