@@ -1,8 +1,8 @@
-import CaseStudies from "@/components/casestudies";
-import About from "@/components/about";
-import WhatAndHow from "@/components/what";
-import Connect from "@/components/connect";
-import Header from "@/components/header";
+import CaseStudies from "@/components/CaseStudies";
+import About from "@/components/About";
+import WhatAndHow from "@/components/What";
+import Connect from "@/components/Connect";
+import Header from "@/components/Header";
 
 export default function HomePage() {
   return (
