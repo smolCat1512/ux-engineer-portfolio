@@ -4,7 +4,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Icons for the menu toggle
-import Logo from "./Logo";
+import Logo from "../app/Logo";
 
 const navItems = [
   { title: "Case Studies", href: "#case-studies" },
