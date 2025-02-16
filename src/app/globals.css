@@ -14,6 +14,12 @@
   --foreground: #ffffff;
 }
 
+html {
+  scroll-behaviour: smooth;
+  scroll-padding: 
+  var(--scroll-padding, 8rem);
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);

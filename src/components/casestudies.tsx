@@ -23,7 +23,7 @@ const caseStudies = [
 export default function CaseStudies() {
 
   return (
-    <section id="case-studies" className="space-y-12 p-8">
+    <section id="case-studies" className="space-y-12 p-8 hi-screen flex-1">
       {caseStudies.map((study) => (
         <div
           key={study.slug}

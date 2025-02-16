@@ -5,6 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Icons for the menu toggle
 import Logo from "../app/Logo";
+import "../app/main.tsx";
 
 const navItems = [
   { title: "Case Studies", href: "#case-studies" },
@@ -23,7 +24,7 @@ const Header = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:block">
+      <nav className="hidden md:block primary-navigation">
         <ul className="flex space-x-6">
           {navItems.map((item) => (
             <li key={item.href}>
@@ -37,7 +38,7 @@ const Header = () => {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-white"
+        className="md:hidden text-white primary-navigation"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
