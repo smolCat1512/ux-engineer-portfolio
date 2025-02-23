@@ -9,8 +9,8 @@ const Logo: React.FC = () => {
         <span className="relative top-1">H</span>
       </span>
       {/* HOME Text (Appears on Hover, Slides Up) */}
-      <span className="absolute transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-        HOME
+      <span className="absolute transition-transform duration-500 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 text-sky-400">
+        Home
       </span>
     </div>
   );
