@@ -3,12 +3,24 @@ import Cat from "../app/assets/cat1.png";
 
 const Me = () => {
   return (
-    <section className="hi-screen flex-1 p-4">
-      <div className="flex flex-row justify-evenly">
-        <Image src={Cat} width={600} height={400} alt="holding image for hero section" priority/>
-        <div>
-        <h2 className="text-3xl font-bold">Shaun Halliday</h2>
-        <p className="text-purple-500">Hi this is text about me</p>
+    <section className="h-screen flex-1 p-4 flex justify-center">
+      <div className="flex flex-col sm:flex-col md:flex-row items-start md:justify-evenly w-full">
+        {/* Image - Hidden on mobile, visible on tablets and larger */}
+        <div className="hidden sm:flex justify-center sm:w-full md:w-1/2">
+          <Image 
+            src={Cat} 
+            width={400} 
+            height={300} 
+            alt="holding image for hero section" 
+            priority 
+            className="w-auto max-w-[80%] sm:max-w-[60%] md:max-w-none"
+          />
+        </div>
+        
+        {/* Text Section */}
+        <div className="text-center md:text-left sm:w-full md:w-1/2 p-4">
+          <h2 className="text-3xl font-bold">Shaun Halliday</h2>
+          <p className="text-purple-500">Hi this is text about me</p>
         </div>
       </div>
     </section>
