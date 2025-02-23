@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
     <div className="group relative flex items-center justify-center w-16 h-16 border-2 border-purple-700 text-white font-bold text-xl overflow-hidden">
       {/* SH Text (Default State, Purple Color) */}
       <span className="absolute transition-transform duration-500 transform translate-y-0 text-purple-500 group-hover:-translate-y-10 opacity-100 group-hover:opacity-0">
-        <span className="relative -top-1">S</span>
+        <span className="relative -top-2 mr-1.5">S</span>
         <span className="relative top-1">H</span>
       </span>
       {/* HOME Text (Appears on Hover, Slides Up) */}
