@@ -2,8 +2,8 @@ import CaseStudies from "@/components/CaseStudies";
 import About from "@/components/About";
 import WhatAndHow from "@/components/What";
 import Connect from "@/components/Connect";
-import Header from "@/components/Header";
 import Me from "@/components/Me";
+import Header from "@/components/Header";
 
 export default function HomePage() {
   return (

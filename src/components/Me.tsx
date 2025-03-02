@@ -1,9 +1,18 @@
+// Mark this file as a Client Component
+"use client";
+
 import Image from "next/image";
 import Cat from "../app/assets/cat1.png";
+import { motion } from "motion/react";
 
 const Me = () => {
   return (
-    <section className="h-screen flex-1 p-4 flex justify-center">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="h-screen flex-1 p-4 flex justify-center"
+    >
       <div className="flex flex-col sm:flex-col md:flex-row items-start md:justify-evenly w-full">
         {/* Image - Hidden on mobile, visible on tablets and larger */}
         <div className="hidden sm:flex justify-center sm:w-full md:w-1/2">
@@ -23,7 +32,7 @@ const Me = () => {
           <p className="text-purple-500">Hi this is text about me</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
