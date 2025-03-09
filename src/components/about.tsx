@@ -3,7 +3,7 @@
 
 import { motion } from "motion/react";
 
-export default function About() {
+const About = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
@@ -11,9 +11,11 @@ export default function About() {
       transition={{ duration: 4, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.4 }} // Ensures it only animates once when 10% of it is in view
       className="hi-screen flex-1 p-4"
-      id="case-studies"
+      id="about"
     >
       About
     </motion.section>
   );
 }
+
+export default About;
