@@ -1,5 +1,9 @@
+// Mark this file as a Client Component
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const caseStudies = [
   {
@@ -21,40 +25,44 @@ const caseStudies = [
 ];
 
 export default function CaseStudies() {
-
   return (
-    <section id="case-studies" className="space-y-12 p-8 hi-screen flex-1">
-      {caseStudies.map((study) => (
-        <div
-          key={study.slug}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
-        >
-          {/* Left Side - Text */}
-          <div>
-            <h2 className="text-3xl font-bold">{study.title}</h2>
-            <p className="text-gray-300">{study.description}</p>
-            <p className="text-gray-400 mt-2">{study.year}</p>
-            <Link
-              href={`/case-studies/${study.slug}`}
-              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
-            >
-              View Case Study
-            </Link>
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 4, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.4 }} // Ensures it only animates once when 10% of it is in view
+      className="space-y-12 p-8 hi-screen flex-1"
+      id="case-studies"
+    >
+        {caseStudies.map((study) => (
+          <div
+            key={study.slug}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"
+          >
+            {/* Left Side - Text */}
+            <div>
+              <h2 className="text-3xl font-bold">{study.title}</h2>
+              <p className="text-gray-300">{study.description}</p>
+              <p className="text-gray-400 mt-2">{study.year}</p>
+              <Link
+                href={`/case-studies/${study.slug}`}
+                className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+              >
+                View Case Study
+              </Link>
+            </div>
+            {/* Right Side - Image */}
+            <div>
+              <Image
+                src={study.image}
+                alt={study.title}
+                width={300}
+                height={200}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
-          {/* Right Side - Image */}
-          <div>
-            <Image
-              src={study.image}
-              alt={study.title}
-              width={300}
-              height={200}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      ))}
-    </section>
+        ))}
+    </motion.section>
   );
-
-  // <section className="hi-screen flex-1 p-4">Case Studies</section>;
 }
