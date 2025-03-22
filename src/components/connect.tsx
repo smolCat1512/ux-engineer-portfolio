@@ -6,9 +6,9 @@ import { motion } from "motion/react";
 const Connect = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 4, ease: "easeOut" }}
+      transition={{ duration: 2, ease: "easeIn" }}
       viewport={{ once: true, amount: 0.4 }} // Ensures it only animates once when 10% of it is in view
       className="hi-screen flex-1 p-4"
       id="connect"
