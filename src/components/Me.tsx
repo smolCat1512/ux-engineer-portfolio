@@ -3,7 +3,8 @@
 
 import Image from "next/image";
 import Cat from "../app/assets/cat1.png";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+
 
 const Me = () => {
   return (

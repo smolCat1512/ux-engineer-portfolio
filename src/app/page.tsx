@@ -12,11 +12,11 @@ export default function HomePage() {
     <section id="me" className="h-screen flex items-start justify-center pt-36">
         <Me />
       </section>
-      <section id="case-studies" className="h-screen flex items-start justify-center">
-        <CaseStudies />
-      </section>
       <section id="about" className="h-screen flex items-start justify-center">
         <About />
+      </section>
+      <section id="case-studies" className="h-screen flex items-start justify-center">
+        <CaseStudies />
       </section>
       <section id="what-how" className="h-screen flex items-start justify-center">
         <WhatAndHow />

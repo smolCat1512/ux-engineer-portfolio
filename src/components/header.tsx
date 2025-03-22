@@ -6,11 +6,11 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Icons for the menu toggle
 import Logo from "../app/Logo";
 import "../app/main.tsx";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const navItems = [
-  { title: "Case Studies", href: "#case-studies" },
   { title: "About + CV", href: "#about" },
+  { title: "Case Studies", href: "#case-studies" },
   { title: "What and How", href: "#what-how" },
   { title: "Connect", href: "#connect" },
 ];

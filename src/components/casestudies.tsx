@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const caseStudies = [
   {
@@ -31,7 +31,7 @@ export default function CaseStudies() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: "easeIn" }}
       viewport={{ once: true, amount: 0.4 }} // Ensures it only animates once when 10% of it is in view
-      className="space-y-12 p-8 hi-screen flex-1"
+      className="space-y-12 p-8 hi-screen flex-1 pt-8"
       id="case-studies"
     >
       {caseStudies.map((study) => (

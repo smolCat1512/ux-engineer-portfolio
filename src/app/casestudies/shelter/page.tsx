@@ -1,9 +1,17 @@
+// Mark this file as a Client Component
+"use client";
+
 import CaseStudiesHeader from "@/components/CaseStudiesHeader";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ProjectShelter() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
       <CaseStudiesHeader />
       <div className="p-8 max-w-3xl mx-auto mt-24">
         <h1 className="text-4xl font-bold">Project Shelter</h1>
@@ -43,6 +51,6 @@ export default function ProjectShelter() {
         <h2 className="text-2xl font-bold mt-6">Final Designs</h2>
         <p className="text-lg">Here is a showcase of the final UI designs.</p>
       </div>
-    </>
+    </motion.div>
   );
 }

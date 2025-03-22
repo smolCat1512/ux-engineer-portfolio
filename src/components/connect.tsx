@@ -1,7 +1,7 @@
 // Mark this file as a Client Component
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const Connect = () => {
   return (
