@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 const Connect = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: "easeIn" }}
-      viewport={{ once: true, amount: 0.4 }} // Ensures it only animates once when 10% of it is in view
+      viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 10% of it is in view
       className="hi-screen flex-1 p-4"
       id="connect"
     >
