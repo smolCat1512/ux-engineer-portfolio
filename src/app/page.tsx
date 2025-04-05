@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <motion.body
+    <motion.main
     initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
@@ -32,6 +32,6 @@ export default function HomePage() {
       <footer id="connect" className="h-screen flex items-start justify-center">
         <Connect />
       </footer>
-    </motion.body>
+    </motion.main>
   );
 }
