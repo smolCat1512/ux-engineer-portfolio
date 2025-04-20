@@ -10,10 +10,10 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: "easeIn" }}
       viewport={{ once: true, amount: 0.1 }} // Ensures it only animates once when 10% of it is in view
-      className="hi-screen flex-1 p-4"
+      className="hi-screen p-4 justify-center w-11/12"
       id="about"
     >
-      About
+      <h2 className="text-3xl font-bold pb-6">About</h2>
     </motion.section>
   );
 };

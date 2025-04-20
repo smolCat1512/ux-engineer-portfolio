@@ -14,10 +14,9 @@ export default function ProjectShelter() {
     >
       <CaseStudiesHeader />
       <div className="p-8 max-w-3xl mx-auto mt-24">
-        <h1 className="text-4xl font-bold">Project Shelter</h1>
+        <h1 className="text-4xl font-bold">Digital advice webchat development</h1>
         <p className="text-gray-300">
-          A redesign of a major e-commerce platform to improve UX and conversion
-          rates.
+          Helping people seek advice on complex housing and personal issues
         </p>
         <p className="text-gray-400 mt-2">2024</p>
 
