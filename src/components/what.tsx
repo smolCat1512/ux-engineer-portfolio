@@ -1,7 +1,7 @@
 // Mark this file as a Client Component
 "use client";
 
-import Research from "@/app/whatandhow/research";
+import Research from "../app/whatandhow/research";
 import { motion } from "framer-motion";
 
 const WhatAndHow = () => {

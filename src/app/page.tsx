@@ -1,12 +1,12 @@
 // Mark this file as a Client Component
 "use client";
 
-import CaseStudies from "@/components/CaseStudies";
-import About from "@/components/About";
-import WhatAndHow from "@/components/What";
-import Connect from "@/components/Connect";
-import Me from "@/components/Me";
-import Header from "@/components/Header";
+import CaseStudies from "../components/casestudies";
+import About from "../components/about";
+import WhatAndHow from "../components/what";
+import Connect from "../components/connect";
+import Me from "../components/Me";
+import Header from "../components/header";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
