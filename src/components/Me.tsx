@@ -1,10 +1,8 @@
 // Mark this file as a Client Component
 "use client";
 
-import Image from "next/image";
-import Cat from "../app/assets/cat1.png";
+import catImg from '../app/assets/cat1.png';
 import { motion } from "framer-motion";
-
 
 const Me = () => {
   return (
@@ -17,16 +15,9 @@ const Me = () => {
       <div className="flex flex-col sm:flex-col md:flex-row items-start md:justify-evenly w-full">
         {/* Image - Hidden on mobile, visible on tablets and larger */}
         <div className="hidden sm:flex justify-center sm:w-full md:w-1/2">
-          <Image 
-            src={Cat} 
-            width={400} 
-            height={300} 
-            alt="holding image for hero section" 
-            priority 
-            className="w-auto max-w-[80%] sm:max-w-[60%] md:max-w-none"
-          />
+          <img src={catImg.src} alt="Cat" width={400} height={300} />
         </div>
-        
+
         {/* Text Section */}
         <div className="text-center md:text-left sm:w-full md:w-1/2 p-4">
           <h2 className="text-3xl font-bold">Shaun Halliday</h2>
