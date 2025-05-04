@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  // Remove the experimental appDir flag as it's now stable
 };
 
 export default nextConfig;
