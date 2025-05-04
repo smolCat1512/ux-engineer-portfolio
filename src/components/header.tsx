@@ -5,6 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Icons for the menu toggle
 import Logo from "../app/Logo";
+
 import { motion } from "framer-motion";
 
 const navItems = [
@@ -24,50 +25,50 @@ const Header = () => {
       transition={{ duration: 1 }}
       className="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur-lg p-4 flex items-center justify-between z-50"
     >
-        <Link href="/">
-          <Logo />
-        </Link>
+      <Link href="/">
+        <Logo />
+      </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:block primary-navigation">
-          <ul className="flex space-x-6">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="text-white text-lg hover:underline"
-                >
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white primary-navigation"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle Menu"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        {/* Mobile Navigation Panel */}
-        {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 p-6 flex flex-col items-center space-y-4 md:hidden">
-            {navItems.map((item) => (
+      {/* Desktop Navigation */}
+      <nav className="hidden md:block primary-navigation">
+        <ul className="flex space-x-6">
+          {navItems.map((item) => (
+            <li key={item.href}>
               <a
-                key={item.href}
                 href={item.href}
                 className="text-white text-lg hover:underline"
-                onClick={() => setIsOpen(false)} // Close menu on click
               >
                 {item.title}
               </a>
-            ))}
-          </div>
-        )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-white primary-navigation"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle Menu"
+      >
+        {isOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+      {/* Mobile Navigation Panel */}
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 p-6 flex flex-col items-center space-y-4 md:hidden">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-white text-lg hover:underline"
+              onClick={() => setIsOpen(false)} // Close menu on click
+            >
+              {item.title}
+            </a>
+          ))}
+        </div>
+      )}
     </motion.header>
   );
 };
