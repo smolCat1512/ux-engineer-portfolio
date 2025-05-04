@@ -9,6 +9,7 @@ import Me from "../components/Me";
 import Header from "../components/header";
 import { motion } from "framer-motion";
 
+
 export default function HomePage() {
   return (
     <motion.main
