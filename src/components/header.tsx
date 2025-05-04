@@ -5,7 +5,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Icons for the menu toggle
 import Logo from "../app/Logo";
-import "../app/main.tsx";
 import { motion } from "framer-motion";
 
 const navItems = [
